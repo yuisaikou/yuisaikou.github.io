@@ -247,7 +247,7 @@
                 
 
 <div class="page-content">
-  <p class="note note-danger">&#x2014;&#x2013;Aplayer&#x2014;&#x2014;-</p><br> <div id="posts-chart"></div>
+  <p></p><div id="posts-chart" data-fontsize="10px"></div>
   <script id="postsChart">
     let postsChart = echarts.init(document.getElementById('posts-chart'));
     let postsOption = {
@@ -295,55 +295,92 @@
         ]
     };
     postsChart.setOption(postsOption);
-    </script><br>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-            <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-YLGoKnkj" style="margin-bottom: 20px; width: "></div>
-        <script>
-          var ap_YLGoKnkj = new APlayer({
-            element: document.getElementById("mmedia-YLGoKnkj"),
-            narrow: false,
-            autoplay: false,
-            showlrc: 3,
-            music: {
-              title: "Caffeine",
-              author: "Jeff Williams",
-              url: "caffeine.mp3",
-              pic: "picture.jpg",
-              lrc: "caffeine.txt"
-            },
-            undefined
-          });
-          window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_YLGoKnkj);
-        </script><br><br>
-			<script>
-				console.error("TypeError: Cannot set property 'narrow' of undefined");
-			</script><br><br><p class="note note-danger">&#x2014;&#x2013;Dplayer&#x2014;&#x2013;</p><br><a href="https://www.u2sb.top/docs/hexo-tag-mmedia/#dplayer">https://www.u2sb.top/docs/hexo-tag-mmedia/#dplayer</a><br><div id="mmedia-VbbMFkte"></div><script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
-      <script>
-        var dp_VbbMFkte = new DPlayer({
-            container: document.getElementById('mmedia-VbbMFkte'),
-            autoplay: false,
-            theme: '#b7daff',
-            loop: false,
-            lang: navigator.language,
-            screenshot: false,
-            hotkey: true,
-            preload: 'auto',
-            logo: '',
-            volume: 0.7,
-            mutex: true,
-            video: { url: 'https://quqi.gblhgk.com/s/975430/qWL3nWS2n190aC8n', pic: '', thumbnails: '', type: 'auto'},
-            
-            danmaku: {id: 'DDEC4F882C0B66FAD', api: 'https://api.prprpr.me/dplayer/v3/', token: '', maximum: '10000', addition: ["addition0","addition1"], user: 'DIYgod', bottom: '15%', unlimited: 'true'},
-            contextmenu: [{text: 'hexo-tag-mmedia', link: 'https://github.com/MonoLogueChi/hexo-tag-mmedia'}],
-            highlight: [],
-            undefined
-        });
-        dp_VbbMFkte.on("fullscreen", function () { if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { screen.orientation.lock("landscape"); }});
-        
-      </script>
-        <br><p class="note note-danger">&#x2014;&#x2013;bilibili&#x2014;&#x2013;</p>
+    </script><br><!-- "data-length"为显示标签个数(从多到少)，默认为10 --><p></p>
+<p></p><div id="tags-chart" data-length="10"></div>
+  <script id="tagsChart">
+    let tagsChart = echarts.init(document.getElementById('tags-chart'));
+    let tagsOption = {
+        title: {
+            text: 'Top10标签统计图',
+            top: -5,
+            x: 'center'
+        },
+        tooltip: {},
+        xAxis: [
+            {
+                type: 'category',
+                data: ["hexo"]
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                type: 'bar',
+                color: ['#82d3f4'],
+                barWidth : 18,
+                data: [2],
+                markPoint: {
+                    symbolSize: 45,
+                    data: [{
+                        type: 'max',
+                        itemStyle: {color: ['#3ecf8e']},
+                        name: '最大值'
+                    }, {
+                        type: 'min',
+                        itemStyle: {color: ['#fa755a']},
+                        name: '最小值'
+                    }],
+                },
+                markLine: {
+                    itemStyle: {color: ['#ab47bc']},
+                    data: [
+                        {type: 'average', name: '平均值'}
+                    ]
+                }
+            }
+        ]
+    };
+    tagsChart.setOption(tagsOption);
+    </script><p></p>
+<p></p><div id="categories-chart"></div>
+  <script id="categoriesChart">
+    let categoriesChart = echarts.init(document.getElementById('categories-chart'));
+    let categoriesOption = {
+        title: {
+            text: '文章分类统计图',
+            top: -4,
+            x: 'center'
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        series: [
+            {
+                name: '分类',
+                type: 'pie',
+                radius: '50%',
+                color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
+                data: [{"name":"top","value":2}],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+    categoriesChart.setOption(categoriesOption);
+    </script><br><img src="https://ghchart.rshah.org/66ccff/yuisaikou" srcset="/img/loading.gif" alt="constown&apos;s Github chart"><p></p>
+<hr>
+<p></p><details><br>  <summary>&#x5C60;&#x9F99;&#x5B9D;&#x5200;&#x70B9;&#x51FB;&#x5C31;&#x9001;</summary><br>  <div class="code-wrapper"><pre class="language-none"><code class="language-none">&#x6211;&#x7CFB;&#x6E23;&#x6E23;&#x8F89;&#xFF0C;&#x662F;&#x5144;&#x5F1F;&#x5C31;&#x6DFB;&#x52A0;&#x53CB;&#x94FE;&#xFF01;</code></pre></div><p></p>
+<p></p></details><br><img src="https://img-blog.csdn.net/20150629163508413" srcset="/img/loading.gif" width="300" alt="&#x6548;&#x679C;&#x56FE;" align="center"><p></p>
 
 </div>
 
