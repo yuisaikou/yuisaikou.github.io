@@ -434,38 +434,35 @@
 
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
-     <a href="https://xn--4gqva209dwmcyydi46e.com/" target="_blank" rel="nofollow noopener"><span>&#x56DB;&#x65B9;&#x82B1;&#x51C0;</span></a> <i class="iconfont xxsxingqu"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+     <a href="https://xn--4gqva209dwmcyydi46e.com/" target="_blank" rel="nofollow noopener"><span>&#x56DB;&#x65B9;&#x82B1;&#x51C0;</span></a> <i class="iconfont  icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
   </div>
   
-  <div class="statistics">
-    
-    
-
-    
-      
-        <!-- 不蒜子统计PV -->
-        <span id="busuanzi_container_site_pv" style="display: none">
-            &#x603B;&#x8BBF;&#x95EE;&#x91CF; 
-            <span id="busuanzi_value_site_pv"></span>
-             &#x6B21;
-          </span>
-      
-      
-        <!-- 不蒜子统计UV -->
-        <span id="busuanzi_container_site_uv" style="display: none">
-            &#x603B;&#x8BBF;&#x5BA2;&#x6570; 
-            <span id="busuanzi_value_site_uv"></span>
-             &#x4EBA;
-          </span>
-      
-    
-  </div>
-
 
   
 
   
+  	  <!-- 网站运行时间的设置 -->
+<span id="timeDate">&#x8F7D;&#x5165;&#x5929;&#x6570;...</span>
+<span id="times">&#x8F7D;&#x5165;&#x65F6;&#x5206;&#x79D2;...</span> 
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("01/01/3014 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (grt - now ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = ( grt - now ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = ( grt - now ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (grt - now ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "可以来拯救吗？ "+dnum+"天";
+        document.getElementById("times").innerHTML = hnum+"小时" + mnum + "分" + snum + "秒";
+    }
+setInterval("createtime()",250);
+</script> 
 </footer>
+
+
 
 <!-- SCRIPTS -->
 
