@@ -27,7 +27,7 @@
     
     <summary type="html">
     
-      hello！
+      &lt;h1 id=&quot;这是一个测试文本&quot;&gt;&lt;a href=&quot;#这是一个测试文本&quot; class=&quot;headerlink&quot; title=&quot;这是一个测试文本&quot;&gt;&lt;/a&gt;这是一个测试文本&lt;/h1&gt;
     
     </summary>
     
