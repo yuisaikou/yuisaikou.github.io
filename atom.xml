@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xn--4gqva209dwmcyydi46e.com/"/>
-  <updated>2020-12-22T14:31:34.003Z</updated>
+  <updated>2021-01-04T17:11:37.133Z</updated>
   <id>https://xn--4gqva209dwmcyydi46e.com/</id>
   
   <author>
@@ -17,24 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>这是一个测试文本</title>
-    <link href="https://xn--4gqva209dwmcyydi46e.com/2020-12-18_gumi.html"/>
-    <id>https://xn--4gqva209dwmcyydi46e.com/2020-12-18_gumi.html</id>
-    <published>2020-12-18T11:37:22.000Z</published>
-    <updated>2020-12-22T14:31:34.003Z</updated>
+    <title>域名注册</title>
+    <link href="https://xn--4gqva209dwmcyydi46e.com/2021-1-5_make-domainname.html"/>
+    <id>https://xn--4gqva209dwmcyydi46e.com/2021-1-5_make-domainname.html</id>
+    <published>2021-01-04T16:00:00.000Z</published>
+    <updated>2021-01-04T17:11:37.133Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="这是一个测试文本"><a href="#这是一个测试文本" class="headerlink" title="这是一个测试文本"></a>这是一个测试文本</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="域名注册服务商选择"><a href="#域名注册服务商选择" class="headerlink" title="域名注册服务商选择"></a>域名注册服务商选择</h1><ul><li>国内<ul><li><a href="https://wanwang.aliyun.com/">阿里云万网</a>：尚可，好像只提供com和net这两个域名的隐藏个人信息服务</li><li><a href="https://www.huaweicloud.com/product/domain.html">华为云domain</a>：在企鹅和阿里中间的位置</li><li><a href="https://dnspod.cloud.tencent.com/">腾讯云dnspod</a>：我目前所有com域名都在这个上面</li><li><a href="https://cloud.baidu.com/product/bcd.html">百度云BCD</a>：没多了解</li></ul></li><li>国外<ul><li><a href="https://sg.godaddy.com/">GoDaddy</a>：全球最大的域名服务商，当然价格就…也是贵的，隐藏个人信息还要收费</li><li><a href="https://www.namesilo.com/">namesilo</a>：价格便宜，比国内的稍微贵一丢丢，所有域名均支持免费whois隐藏个人信息</li></ul></li></ul><p>&#8195;&#8195;还有很多其他的服务商就不一一列举了<br><a id="more"></a></p><h1 id="选购指南"><a href="#选购指南" class="headerlink" title="选购指南"></a>选购指南</h1><p>&#8195;&#8195;对于正常内容的网站，.com和.net选国内的就可以了，当然也包括cn…价格比国外便宜，安全性几个顶级服务商一般不会出问题，而且这两个后缀的域名默认隐藏个人信息。<br>&#8195;&#8195;其他的域名，比如work、link、site、me…请参考各个国内服务商的域名隐私保护指南(<a href="https://wanwang.aliyun.com/domain/whoisprotect/">阿里云</a>、<a href="https://support.huaweicloud.com/domain_faq/domain_faq_0002.html">华为云</a>、<a href="https://cloud.tencent.com/document/product/242/30404">腾讯云</a>、<a href="https://cloud.baidu.com/doc/BCD/s/bjwvym8qn">百度云</a>)，他们是不支持非主流域名隐藏注册人姓名和注册邮箱的，根据我的实践，腾讯和阿里的top域名，whois是可以查询到注册人姓名的，虽然ICANN和欧盟在2018年已经要求whois查询结果不再展示域名所有者、联系邮箱等信息，但有些域名服务商对于非主流域名并没有默认隐藏。<br>&#8195;&#8195;这些非主流的域名，我一般作为跳转域名用，当然也可以给博客之类小网站，出于安全隐私考虑，这些域名最好选择国外的，好处有很多就不多说了，至少whois查询不到注册人。<br>&#8195;&#8195;然后是国外服务商的选择，我选择的是namesilo，因为便宜且支持隐藏个人信息，无需备案就可跳转。食用方法参考：<a href="https://zhuanlan.zhihu.com/p/33921436">https://zhuanlan.zhihu.com/p/33921436</a> 。跳转指定url参考：<a href="https://www.namesilo.com/Support/Domain-Forwarding">https://www.namesilo.com/Support/Domain-Forwarding</a> 。Google邮箱注册在移动端gmail注册即可不绑定手机，最开始的手机号只为验证是否真人。</p><p>价格对比：<a href="https://www.domain265.com/">https://www.domain265.com/</a><br>whois查询：<a href="https://domain.163yun.com/">https://domain.163yun.com/</a><br>ICANN更多信息：<a href="https://www.icann.org/news/announcement-2018-05-22-zh">https://www.icann.org/news/announcement-2018-05-22-zh</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;这是一个测试文本&quot;&gt;&lt;a href=&quot;#这是一个测试文本&quot; class=&quot;headerlink&quot; title=&quot;这是一个测试文本&quot;&gt;&lt;/a&gt;这是一个测试文本&lt;/h1&gt;
+      &lt;h1 id=&quot;域名注册服务商选择&quot;&gt;&lt;a href=&quot;#域名注册服务商选择&quot; class=&quot;headerlink&quot; title=&quot;域名注册服务商选择&quot;&gt;&lt;/a&gt;域名注册服务商选择&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;国内&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://wanwang.aliyun.com/&quot;&gt;阿里云万网&lt;/a&gt;：尚可，好像只提供com和net这两个域名的隐藏个人信息服务&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.huaweicloud.com/product/domain.html&quot;&gt;华为云domain&lt;/a&gt;：在企鹅和阿里中间的位置&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dnspod.cloud.tencent.com/&quot;&gt;腾讯云dnspod&lt;/a&gt;：我目前所有com域名都在这个上面&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.baidu.com/product/bcd.html&quot;&gt;百度云BCD&lt;/a&gt;：没多了解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;国外&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://sg.godaddy.com/&quot;&gt;GoDaddy&lt;/a&gt;：全球最大的域名服务商，当然价格就…也是贵的，隐藏个人信息还要收费&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.namesilo.com/&quot;&gt;namesilo&lt;/a&gt;：价格便宜，比国内的稍微贵一丢丢，所有域名均支持免费whois隐藏个人信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;#8195;&amp;#8195;还有很多其他的服务商就不一一列举了&lt;br&gt;
     
     </summary>
     
-      <category term="gumi" scheme="https://xn--4gqva209dwmcyydi46e.com/categories/gumi/"/>
+      <category term="网站搭建" scheme="https://xn--4gqva209dwmcyydi46e.com/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="gumi" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/gumi/"/>
+      <category term="域名" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
   </entry>
   
