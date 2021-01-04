@@ -270,7 +270,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      419 字
+      333 字
     </span>
   
 
@@ -327,11 +327,32 @@
               </p>
             
             <div class="markdown-body">
-              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&#8195;&#8195;云函数简介[^1]<br><a id="more"></a></p>
-<p>&#8195;&#8195;云函数即在云端（服务器端）运行的函数。在物理设计上，一个云函数可由多个文件组成，占用一定量的 CPU 内存等计算资源；各云函数完全独立；可分别部署在不同的地区。开发者无需购买、搭建服务器，只需编写函数代码并部署到云端即可在小程序端调用，同时云函数之间也可互相调用。<br>&#8195;&#8195;一个云函数的写法与一个在本地定义的 JavaScript 方法无异，代码运行在云端 Node.js 中。当云函数被小程序端调用时，定义的代码会被放在 Node.js 运行环境中执行。我们可以如在 Node.js 环境中使用 JavaScript 一样在云函数中进行网络请求等操作，而且我们还可以通过云函数后端 SDK 搭配使用多种服务，比如使用云函数 SDK 中提供的数据库和存储 API 进行数据库和存储的操作，这部分可参考数据库和存储后端 API 文档。<br>&#8195;&#8195;云开发的云函数的独特优势在于与微信登录鉴权的无缝整合。当小程序端调用云函数时，云函数的传入参数中会被注入小程序端用户的 openid，开发者无需校验 openid 的正确性因为微信已经完成了这部分鉴权，开发者可以直接使用该 openid。</p>
-<p>[^1]：爱上</p>
-<p>创建脚注格式类似这样 [^RUNOOB]。</p>
-<p>[^RUNOOB]: 菜鸟教程 – 学的不仅是技术，更是梦想！！！</p>
+              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&#8195;&#8195;<a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions.html">云函数简介</a><br>&#8195;&#8195;长不看结论：总之就是跑脚本的。目前我也只用它在跑签到脚本。<br><a id="more"></a></p>
+<h1 id="server酱"><a href="#server酱" class="headerlink" title="server酱"></a>server酱</h1><p>原版server酱：<a href="http://sc.ftqq.com/">http://sc.ftqq.com/</a><br>自搭server酱：<a href="https://www.v2ex.com/t/567927">https://www.v2ex.com/t/567927</a></p>
+<h1 id="哔哩哔哩签到"><a href="#哔哩哔哩签到" class="headerlink" title="哔哩哔哩签到"></a>哔哩哔哩签到</h1><p>项目地址：<a href="https://github.com/happy888888/BiliExp">https://github.com/happy888888/BiliExp</a><br>油猴脚本：<a href="https://greasyfork.org/zh-CN/scripts/393096-bilibiliexp/versions">https://greasyfork.org/zh-CN/scripts/393096-bilibiliexp/versions</a><br>注意事项：云函数方式为cookie签到</p>
+<h1 id="天翼云盘签到和抽奖"><a href="#天翼云盘签到和抽奖" class="headerlink" title="天翼云盘签到和抽奖"></a>天翼云盘签到和抽奖</h1><p>项目地址：<a href="https://github.com/FingerSword/Cloud189-Sign-In">https://github.com/FingerSword/Cloud189-Sign-In</a><br>添加server酱:<br>在username和password下方添加如下代码<br><div class="code-wrapper"><pre class="language-python" data-language="python"><code class="language-python"><span class="token comment">#你的server酱SCKEY 官网http://sc.ftqq.com/3.version</span>
+SCKEY <span class="token operator">=</span> <span class="token string">""</span>
+<span class="token comment">#SERVER酱微信推送url</span>
+scurl <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f"https://sc.ftqq.com/</span><span class="token interpolation"><span class="token punctuation">&#123;</span>SCKEY<span class="token punctuation">&#125;</span></span><span class="token string">.send"</span></span></code></pre></div><br>在底部return s后添加<br><div class="code-wrapper"><pre class="language-python" data-language="python"><code class="language-python"><span class="token comment"># 微信推送</span>
+<span class="token keyword">def</span> <span class="token function">pushWechat</span><span class="token punctuation">(</span>desp<span class="token punctuation">,</span>nowtime<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> <span class="token string">'失败'</span> <span class="token keyword">in</span> desp <span class="token punctuation">:</span>
+        params <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+            <span class="token string">'text'</span><span class="token punctuation">:</span> <span class="token string">'天翼云盘签到失败提醒'</span> <span class="token operator">+</span> nowtime<span class="token punctuation">,</span>
+            <span class="token string">'desp'</span><span class="token punctuation">:</span> desp
+            <span class="token punctuation">&#125;</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        params <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+            <span class="token string">'text'</span><span class="token punctuation">:</span> <span class="token string">'天翼云盘签到提醒'</span> <span class="token operator">+</span> nowtime<span class="token punctuation">,</span>
+            <span class="token string">'desp'</span><span class="token punctuation">:</span> desp
+    <span class="token punctuation">&#125;</span>
+    requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>scurl<span class="token punctuation">,</span>params<span class="token operator">=</span>params<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">"__main__"</span><span class="token punctuation">:</span>
+    arg1 <span class="token operator">=</span> <span class="token number">0</span>
+    arg2 <span class="token operator">=</span> <span class="token number">0</span>
+    main<span class="token punctuation">(</span>arg1<span class="token punctuation">,</span>arg2<span class="token punctuation">)</span></code></pre></div><br>注意事项：不改密码就ok  </p>
+<h1 id="网易云音乐签到"><a href="#网易云音乐签到" class="headerlink" title="网易云音乐签到"></a>网易云音乐签到</h1><p>地址：<a href="https://www.coolapk.com/feed/22733317?shareKey=NjhhNGU5NTdiOWE2NWZjMWVhODI">https://www.coolapk.com/feed/22733317?shareKey=NjhhNGU5NTdiOWE2NWZjMWVhODI</a><br>注意事项：不改密码就ok  </p>
+<h1 id="有道云笔记签到"><a href="#有道云笔记签到" class="headerlink" title="有道云笔记签到"></a>有道云笔记签到</h1><p>1.0：<a href="https://www.coolapk.com/feed/18049127?shareKey=MDA1OTY2ZDVkYjYyNWVmMTU5MTE">https://www.coolapk.com/feed/18049127?shareKey=MDA1OTY2ZDVkYjYyNWVmMTU5MTE</a><br>2.0：<a href="https://www.coolapk.com/feed/19750209?shareKey=YTM5NzM3NTFmZGIzNWZmMGY3MjM~&amp;shareFrom=com.coolapk.market_10.3.1">https://www.coolapk.com/feed/19750209?shareKey=YTM5NzM3NTFmZGIzNWZmMGY3MjM~&amp;shareFrom=com.coolapk.market_10.3.1</a><br>注意事项：均为cookie，我用qq登录的账号一天就掉了，用手机号登录的应该能管一个月</p>
 
             </div>
             <hr>
