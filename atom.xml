@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xn--4gqva209dwmcyydi46e.com/"/>
-  <updated>2021-01-06T10:48:57.852Z</updated>
+  <updated>2021-01-06T10:57:04.432Z</updated>
   <id>https://xn--4gqva209dwmcyydi46e.com/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://xn--4gqva209dwmcyydi46e.com/2021-01-06_img-make.html"/>
     <id>https://xn--4gqva209dwmcyydi46e.com/2021-01-06_img-make.html</id>
     <published>2021-01-05T16:00:01.000Z</published>
-    <updated>2021-01-06T10:48:57.852Z</updated>
+    <updated>2021-01-06T10:57:04.432Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="域名选择及绑定"><a href="#域名选择及绑定" class="headerlink" title="域名选择及绑定"></a>域名选择及绑定</h1><p>如果你是国外的域名，markdown是国内使用，需要绑定第三方dns，这里以<a href="https://www.namesilo.com/">namesilo</a>域名绑定<a href="https://www.dnspod.cn/">dnspod</a>为例。<br><!-- more -->  </p><h1 id="namesilo配置-国内备案域名可跳过此步骤"><a href="#namesilo配置-国内备案域名可跳过此步骤" class="headerlink" title="namesilo配置(国内备案域名可跳过此步骤)"></a>namesilo配置(国内备案域名可跳过此步骤)</h1><p><img src="https://picacg.download/sfhj/281BCA8978E663D1AA05423137C07932E35E89FDDDCA7A23445455A7723F219C.png" alt=""></p><p>进入域名管理页面</p><p><img src="https://picacg.download/sfhj/27D2A6D04D47056410374DC679B6BC9C60EAD93FFCD45DF81F907F8096B0FA16.png" alt=""></p><p>将原有三个dns删除替换为以下内容，提交</p><blockquote><p>f1g1ns1.dnspod.net<br>  f1g1ns2.dnspod.net</p></blockquote><p>之后返回最初的域名管理页面，点击域名所在行右侧蓝色地球，进入域名解析页面，删除所有的解析内容即可。</p><h1 id="dnspod配置"><a href="#dnspod配置" class="headerlink" title="dnspod配置"></a>dnspod配置</h1><p>进入dnspod管理页面，添加你的域名，之后刷新<br><img src="https://picacg.download/sfhj/9FBCE3CD04841BAB930D2F4404AE60174DFD15EA2E49782C6395763F01C237B3.png" alt=""></p><p>创建公有读私有写存储桶，并进行配置<br><img src="https://picacg.download/sfhj/5C3AE90E330110085424836989AC2F904D961280A441B32B909654094DCFE2B2.png" alt="添加自定义源站域名"></p><p>复制CNAME到dnspod解析页面，添加CNAME解析<br>需要注意的是，namesilo的dns可能需要等几十分钟才会刷新，在此之前访问域名可能是到达不了存储桶的<br><img src="https://picacg.download/sfhj/8F8DD7DD34489C8833781A9902AAB2865C8E9D67E9CDE6C80709397DBBA92B6F.png" alt=""></p><h1 id="ssl证书以及防盗链设置"><a href="#ssl证书以及防盗链设置" class="headerlink" title="ssl证书以及防盗链设置"></a>ssl证书以及防盗链设置</h1><p>在dnspod或者腾讯云域名注册界面申请免费ssl证书并下载，解压。在存储桶域名绑定页面进行证书绑定，用记事本打开Nginx里的文本并复制到对应区域<br><img src="https://picacg.download/sfhj/CD8B009B26C8DEE3EAA77C6E2F3128849E0C42235F46505D9A044DE045395734.png" alt=""></p><p>测试一下，不挂t的情况下自定义域名可以访问图片，以后的迁移只需copy文件，域名重新对应一下CNAME即可，markdown文章的图库地址不需要变动。<br><img src="https://picacg.download/sfhj/23A0CF2B834EA629571E913336A5F720B1A895D7C61995294EFABD5630E25223.png" alt=""></p><p>存储桶防盗链设置入下，配置完防盗链之后本地预览和网页地址栏输入是访问不了对象存储的，只有白名单内的ip才能访问<br><img src="https://picacg.download/sfhj/2BF0ECB90AA9F7E21EEFFBC486854C621C51F48974B5DF783776F503DA805A5B.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>&#8195;&#8195;如果你是国外的域名，markdown是国内使用，需要绑定第三方dns，这里以<a href="https://www.namesilo.com/">namesilo</a>域名绑定<a href="https://www.dnspod.cn/">dnspod</a>为例。<br><!-- more -->  </p><h1 id="namesilo配置-国内备案域名可跳过此步骤"><a href="#namesilo配置-国内备案域名可跳过此步骤" class="headerlink" title="namesilo配置(国内备案域名可跳过此步骤)"></a>namesilo配置(国内备案域名可跳过此步骤)</h1><p><img src="https://picacg.download/sfhj/281BCA8978E663D1AA05423137C07932E35E89FDDDCA7A23445455A7723F219C.png" alt=""></p><p>进入域名管理页面</p><p><img src="https://picacg.download/sfhj/27D2A6D04D47056410374DC679B6BC9C60EAD93FFCD45DF81F907F8096B0FA16.png" alt=""></p><p>将原有三个dns删除替换为以下内容，提交</p><blockquote><p>f1g1ns1.dnspod.net<br>  f1g1ns2.dnspod.net</p></blockquote><p>之后返回最初的域名管理页面，点击域名所在行右侧蓝色地球，进入域名解析页面，删除所有的解析内容即可。</p><h1 id="dnspod配置"><a href="#dnspod配置" class="headerlink" title="dnspod配置"></a>dnspod配置</h1><p>进入dnspod管理页面，添加你的域名，点击刷新<br><img src="https://picacg.download/sfhj/9FBCE3CD04841BAB930D2F4404AE60174DFD15EA2E49782C6395763F01C237B3.png" alt=""></p><p>创建公有读私有写存储桶，并进行配置<br><img src="https://picacg.download/sfhj/5C3AE90E330110085424836989AC2F904D961280A441B32B909654094DCFE2B2.png" alt="添加自定义源站域名"></p><p>复制CNAME到dnspod解析页面，添加CNAME解析<br>需要注意的是，namesilo的dns可能需要等几十分钟才会刷新，在此之前访问域名可能是到达不了存储桶的<br><img src="https://picacg.download/sfhj/8F8DD7DD34489C8833781A9902AAB2865C8E9D67E9CDE6C80709397DBBA92B6F.png" alt=""></p><h1 id="ssl证书以及防盗链设置"><a href="#ssl证书以及防盗链设置" class="headerlink" title="ssl证书以及防盗链设置"></a>ssl证书以及防盗链设置</h1><p>在dnspod或者腾讯云域名注册界面申请免费ssl证书并下载，解压。在存储桶域名绑定页面进行证书绑定，用记事本打开Nginx里的文本并复制到对应区域<br><img src="https://picacg.download/sfhj/CD8B009B26C8DEE3EAA77C6E2F3128849E0C42235F46505D9A044DE045395734.png" alt=""></p><p>测试一下，不挂t的情况下自定义域名可以访问图片，以后的迁移只需copy文件，域名重新对应一下CNAME即可，markdown文章的图库地址不需要变动。<br><img src="https://picacg.download/sfhj/23A0CF2B834EA629571E913336A5F720B1A895D7C61995294EFABD5630E25223.png" alt=""></p><p>存储桶防盗链设置如下，配置完防盗链之后本地预览和网页地址栏输入是访问不了对象存储的，只有白名单内的ip才能访问<br><img src="https://picacg.download/sfhj/2BF0ECB90AA9F7E21EEFFBC486854C621C51F48974B5DF783776F503DA805A5B.png" alt=""></p>]]></content>
     
     <summary type="html">
     
-      使用对象存储绑定自定义域名，理论“永久链”图床，可在各云服务商或个人服务器间迁移数据
+      使用对象存储绑定自定义域名，理论&quot;永久链&quot;图床，可在各云服务商或个人服务器间迁移数据
     
     </summary>
     
