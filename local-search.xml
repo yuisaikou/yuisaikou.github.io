@@ -4,13 +4,25 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2021-01-06_undefined.html"/>
-    <url>/2021-01-06_undefined.html</url>
+    <title>网盘搭建</title>
+    <link href="/2021-01-07_cloud-make.html"/>
+    <url>/2021-01-07_cloud-make.html</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="Onedrive"><a href="#Onedrive" class="headerlink" title="Onedrive"></a>Onedrive</h1><p>demo：<a href="http://cloud.picacg.download">http://cloud.picacg.download</a></p><h1 id="服务器-对象存储"><a href="#服务器-对象存储" class="headerlink" title="服务器-对象存储"></a>服务器-对象存储</h1><p>demo：null</p>]]></content>
     
     
+    <categories>
+      
+      <category>万事屋</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>无用的生活小技巧</tag>
+      
+    </tags>
     
   </entry>
   
@@ -21,7 +33,7 @@
     <link href="/2021-01-06_img-make.html"/>
     <url>/2021-01-06_img-make.html</url>
     
-    <content type="html"><![CDATA[<p>&#8195;&#8195;如果你是国外的域名，markdown是国内使用，需要绑定第三方dns，这里以<a href="https://www.namesilo.com/">namesilo</a>域名绑定<a href="https://www.dnspod.cn/">dnspod</a>为例。<br><!-- more -->  </p><h1 id="namesilo配置-国内备案域名可跳过此步骤"><a href="#namesilo配置-国内备案域名可跳过此步骤" class="headerlink" title="namesilo配置(国内备案域名可跳过此步骤)"></a>namesilo配置(国内备案域名可跳过此步骤)</h1><p><img src="https://picacg.download/sfhj/281BCA8978E663D1AA05423137C07932E35E89FDDDCA7A23445455A7723F219C.png" alt=""></p><p>进入域名管理页面</p><p><img src="https://picacg.download/sfhj/27D2A6D04D47056410374DC679B6BC9C60EAD93FFCD45DF81F907F8096B0FA16.png" alt=""></p><p>将原有三个dns删除替换为以下内容，提交</p><blockquote><p>f1g1ns1.dnspod.net<br>  f1g1ns2.dnspod.net</p></blockquote><p>之后返回最初的域名管理页面，点击域名所在行右侧蓝色地球，进入域名解析页面，删除所有的解析内容即可。</p><h1 id="dnspod配置"><a href="#dnspod配置" class="headerlink" title="dnspod配置"></a>dnspod配置</h1><p>进入dnspod管理页面，添加你的域名，点击刷新<br><img src="https://picacg.download/sfhj/9FBCE3CD04841BAB930D2F4404AE60174DFD15EA2E49782C6395763F01C237B3.png" alt=""></p><p>创建公有读私有写存储桶，并进行配置<br><img src="https://picacg.download/sfhj/5C3AE90E330110085424836989AC2F904D961280A441B32B909654094DCFE2B2.png" alt="添加自定义源站域名"></p><p>复制CNAME到dnspod解析页面，添加CNAME解析<br>需要注意的是，namesilo的dns可能需要等几十分钟才会刷新，在此之前访问域名可能是到达不了存储桶的<br><img src="https://picacg.download/sfhj/8F8DD7DD34489C8833781A9902AAB2865C8E9D67E9CDE6C80709397DBBA92B6F.png" alt=""></p><h1 id="ssl证书以及防盗链设置"><a href="#ssl证书以及防盗链设置" class="headerlink" title="ssl证书以及防盗链设置"></a>ssl证书以及防盗链设置</h1><p>在dnspod或者腾讯云域名注册界面申请免费ssl证书并下载，解压。在存储桶域名绑定页面进行证书绑定，用记事本打开Nginx里的文本并复制到对应区域<br><img src="https://picacg.download/sfhj/CD8B009B26C8DEE3EAA77C6E2F3128849E0C42235F46505D9A044DE045395734.png" alt=""></p><p>测试一下，不挂t的情况下自定义域名可以访问图片，以后的迁移只需copy文件，域名重新对应一下CNAME即可，markdown文章的图片地址不需要变动。<br><img src="https://picacg.download/sfhj/23A0CF2B834EA629571E913336A5F720B1A895D7C61995294EFABD5630E25223.png" alt=""></p><p>存储桶防盗链设置如下，配置完防盗链之后本地预览和网页地址栏输入是访问不了对象存储的，只有白名单内的ip才能访问<br><img src="https://picacg.download/sfhj/2BF0ECB90AA9F7E21EEFFBC486854C621C51F48974B5DF783776F503DA805A5B.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>&#8195;&#8195;如果你是国外的域名，markdown是国内使用，需要绑定第三方dns，这里以<a href="https://www.namesilo.com/">namesilo</a>域名绑定<a href="https://www.dnspod.cn/">dnspod</a>为例。<br><!-- more -->  </p><h1 id="namesilo配置-国内备案域名可跳过此步骤"><a href="#namesilo配置-国内备案域名可跳过此步骤" class="headerlink" title="namesilo配置(国内备案域名可跳过此步骤)"></a>namesilo配置(国内备案域名可跳过此步骤)</h1><p><img src="https://bika.picacg.download/sfhj/281BCA8978E663D1AA05423137C07932E35E89FDDDCA7A23445455A7723F219C.png" alt=""></p><p>进入域名管理页面<br>将原有三个dns删除替换为以下内容，提交</p><blockquote><p>organist.dnspod.net<br>  scorpion.dnspod.net</p></blockquote><p>返回域名管理页面，点击域名所在行右侧蓝色地球，进入域名解析页面，删除所有的解析内容即可。</p><h1 id="dnspod配置"><a href="#dnspod配置" class="headerlink" title="dnspod配置"></a>dnspod配置</h1><p>进入dnspod管理页面，添加你的域名，点击刷新<br><img src="https://bika.picacg.download/sfhj/9FBCE3CD04841BAB930D2F4404AE60174DFD15EA2E49782C6395763F01C237B3.png" alt=""></p><p>创建公有读私有写存储桶，并进行配置<br><img src="https://bika.picacg.download/sfhj/5C3AE90E330110085424836989AC2F904D961280A441B32B909654094DCFE2B2.png" alt="添加自定义源站域名"></p><p>复制CNAME到dnspod解析页面，添加CNAME解析<br>需要注意的是，namesilo的dns可能需要等几十分钟才会刷新，在此之前访问域名可能是到达不了存储桶的<br><img src="https://bika.picacg.download/sfhj/8F8DD7DD34489C8833781A9902AAB2865C8E9D67E9CDE6C80709397DBBA92B6F.png" alt=""></p><h1 id="ssl证书以及防盗链设置"><a href="#ssl证书以及防盗链设置" class="headerlink" title="ssl证书以及防盗链设置"></a>ssl证书以及防盗链设置</h1><p>在dnspod或者腾讯云域名注册界面申请免费ssl证书并下载，解压。在存储桶域名绑定页面进行证书绑定，用记事本打开Nginx里的文本并复制到对应区域<br><img src="https://bika.picacg.download/sfhj/CD8B009B26C8DEE3EAA77C6E2F3128849E0C42235F46505D9A044DE045395734.png" alt=""></p><p>测试一下，不挂t的情况下自定义域名可以访问图片，以后的迁移只需copy文件，域名重新对应一下CNAME即可，markdown文章的图片地址不需要变动。<br><img src="https://bika.picacg.download/sfhj/23A0CF2B834EA629571E913336A5F720B1A895D7C61995294EFABD5630E25223.png" alt=""></p><p>存储桶防盗链设置如下，配置完防盗链之后本地预览和网页地址栏输入是访问不了对象存储的，只有白名单内的ip才能访问<br><img src="https://bika.picacg.download/sfhj/2BF0ECB90AA9F7E21EEFFBC486854C621C51F48974B5DF783776F503DA805A5B.png" alt=""></p>]]></content>
     
     
     <categories>
@@ -46,7 +58,7 @@
     <link href="/2021-01-05_save-weibo.html"/>
     <url>/2021-01-05_save-weibo.html</url>
     
-    <content type="html"><![CDATA[<p>&#8195;&#8195;此方法仅适用于安卓，苹果也可以用但分享私信会麻烦很多。首先，请准备一个印象笔记高级会员(每月10G上传流量),活动时购买99软妹币一年专业版，每月20G流量，高级10G/月会更便宜。<br><!-- more --></p><p>&#8195;&#8195;由于众所周知的原因，微博经常夹掉一些内容，或者博主自删，不能查看半年前的博文。永久保存微博可以使用印象笔记、为知笔记、有道云笔记等，为知笔记记笔记还行，但是保存微博测试之后保存的是链接，有道云笔记可以参考<a href="https://xn--4gqva209dwmcyydi46e.com/2021-01-05_function-cloud">云函数</a>白嫖容量，但是太少了，而且用cookie容易失效不能一劳永逸。<br>&#8195;&#8195;接着是印象笔记，安卓配合share客户端，不算看评论的那一下只用跳转一个页面点4下即可保存。也可以用来保存微信文章，保存后的微信微博文章，在印象笔记中的分类和检索的非常便捷。<br><img src="https://picacg.download/sfhj/DAD1AED5B3178AAD9CCC95D5EC45EA403D4DD01FA32495FA5FC28C604B7D3810.png" alt="私信给印象笔记保存单条微博"></p><p>&#8195;&#8195;保存后的样式如下，图片为原图，可下载<br><img src="https://picacg.download/sfhj/5574B3DE838BA4B3E899C6516506BA3264B8C36D0108838C01641DF5C28544B7.jpg" alt="">  </p>]]></content>
+    <content type="html"><![CDATA[<p>&#8195;&#8195;此方法仅适用于安卓，苹果也可以用但分享私信会麻烦很多。首先，请准备一个印象笔记高级会员(每月10G上传流量),活动时购买99软妹币一年专业版，每月20G流量，高级10G/月会更便宜。<br><!-- more --></p><p>&#8195;&#8195;由于众所周知的原因，微博经常夹掉一些内容，或者博主自删，不能查看半年前的博文。永久保存微博可以使用印象笔记、为知笔记、有道云笔记等，为知笔记记笔记还行，但是保存微博测试之后保存的是链接，有道云笔记可以参考<a href="https://xn--4gqva209dwmcyydi46e.com/2021-01-05_function-cloud">云函数</a>白嫖容量，但是太少了，而且用cookie容易失效不能一劳永逸。<br>&#8195;&#8195;接着是印象笔记，安卓配合share客户端，不算看评论的那一下只用跳转一个页面点4下即可保存。也可以用来保存微信文章，保存后的微信微博文章，在印象笔记中的分类和检索的非常便捷。<br><img src="https://bika.picacg.download/sfhj/DAD1AED5B3178AAD9CCC95D5EC45EA403D4DD01FA32495FA5FC28C604B7D3810.png" alt="私信给印象笔记保存单条微博"></p><p>&#8195;&#8195;保存后的样式如下，图片为原图，可下载<br><img src="https://bika.picacg.download/sfhj/5574B3DE838BA4B3E899C6516506BA3264B8C36D0108838C01641DF5C28544B7.jpg" alt="">  </p>]]></content>
     
     
     <categories>
