@@ -274,7 +274,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      186 字
+      185 字
     </span>
   
 
@@ -331,12 +331,12 @@
               </p>
             
             <div class="markdown-body">
-              <p>准备：能开启静态网页的对象存储，一个没有备案的一级域名<br>思路：一级域名CNAME解析到对象存储的website域名上，对象存储桶只存放一个文件index.html写个JavaScript跳转即可<br><!--more--><br>具体步骤：  </p>
+              <p>准备：能开启静态网页的对象存储，一个没有备案的一级域名<br>思路：一级域名CNAME解析到对象存储的website域名上，存储桶只存放一个index.html，之后写入JavaScript跳转即可<br><!--more--><br>具体步骤：  </p>
 <ol>
 <li>创建一个境外的公有读私有写存储桶，推荐香港节点。</li>
 <li>开启存储桶的静态网站模块，并打开安全模块中的服务器端加密。</li>
 <li>在对象存储域名管理里填写自定义源站域名，在dnspod中添加对应CNAME解析，并上传对应证书密钥到源站上。</li>
-<li>对象存储上传一个index.html文件，写入一下代码<div class="code-wrapper"><pre class="language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">"域名网址"</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></div></li>
+<li>对象存储上传一个index.html文件，写入以下代码<div class="code-wrapper"><pre class="language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">"域名网址"</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></div></li>
 </ol>
 
             </div>
