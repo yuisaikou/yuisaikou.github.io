@@ -19,9 +19,33 @@
   <meta name="description" content="">
   <meta name="author" content="四方花净">
   <meta name="keywords" content="">
-  <title>标签 - 无用的生活小技巧 - 团子天下第一</title>
+  <title>域名跳转 - 团子天下第一</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism-twilight.min.css" />
+      
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -53,7 +77,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -218,14 +242,64 @@
 </nav>
 
     <div class="banner intro-2" id="background" false
-         style="background: url('https://cdn.jsdelivr.net/gh/yuisaikou/yuisaikou.github.io/img/D94A3B113DEFAF18CD2E2D28535E50028A91DFD7E1F10523EA92D471D4627543.jpg') no-repeat center center;
+         style="background: url('https://cdn.jsdelivr.net/gh/yuisaikou/yuisaikou.github.io/img/56AD22CA3EE9548CAA6D01BA18294E862E5D4980C6941AB8425628C14867C8FF.JPG') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="标签 - 无用的生活小技巧">
+            <span class="h2" id="subtitle" title="域名跳转">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      四方花净
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-01-09 00:00" pubdate>
+        2021年1月9日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      186 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      2
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
 
             
           </div>
@@ -238,58 +312,104 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 4 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021-01-09_skip-url" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">域名跳转</span>
-      <time style="float: right;">01-09</time>
-    </a>
-  
-    
-    <a href="/2021-01-07_cloud-make" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">网盘搭建</span>
-      <time style="float: right;">01-07</time>
-    </a>
-  
-    
-    <a href="/2021-01-05_save-weibo" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">永久保存微博</span>
-      <time style="float: right;">01-05</time>
-    </a>
-  
-    
-    <a href="/2021-01-05_function-cloud" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">云函数</span>
-      <time style="float: right;">01-05</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">域名跳转</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：1 小时前
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>准备：能开启静态网页的对象存储，一个没有备案的一级域名<br>思路：一级域名CNAME解析到对象存储的website域名上，对象存储桶只存放一个文件index.html写个JavaScript跳转即可<br>具体步骤：  </p>
+<ol>
+<li>创建一个境外的公有读私有写存储桶，推荐香港节点。</li>
+<li>开启存储桶的静态网站模块，并打开安全模块中的服务器端加密。</li>
+<li>在对象存储域名管理里填写自定义源站域名，在dnspod中添加对应CNAME解析，并上传对应证书密钥到源站上。</li>
+<li>对象存储上传一个index.html文件，写入一下代码<div class="code-wrapper"><pre class="language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">"域名网址"</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></div></li>
+</ol>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/">网站搭建</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%97%A0%E7%94%A8%E7%9A%84%E7%94%9F%E6%B4%BB%E5%B0%8F%E6%8A%80%E5%B7%A7/">无用的生活小技巧</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+			 
+
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021-01-07_cloud-make">
+                        <span class="hidden-mobile">网盘搭建</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+			
+			
+			<!-- 评论by utteranc-->
+ 
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+  
+<!-- Custom -->
+
+	
+
+
     
 
     
@@ -401,7 +521,11 @@ setInterval("createtime()",250);
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
 
 
 
