@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xn--4gqva209dwmcyydi46e.com/"/>
-  <updated>2021-01-09T11:17:36.901Z</updated>
+  <updated>2021-01-10T11:23:36.783Z</updated>
   <id>https://xn--4gqva209dwmcyydi46e.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://xn--4gqva209dwmcyydi46e.com/2021-01-09_skip-url.html"/>
     <id>https://xn--4gqva209dwmcyydi46e.com/2021-01-09_skip-url.html</id>
     <published>2021-01-08T16:00:01.000Z</published>
-    <updated>2021-01-09T11:17:36.901Z</updated>
+    <updated>2021-01-10T11:23:36.783Z</updated>
     
-    <content type="html"><![CDATA[<p>准备：能开启静态网页的对象存储，一个域名<br>思路：一级域名CNAME解析到对象存储的website域名上，存储桶只存放一个index.html，之后写入JavaScript跳转即可<br><!--more--><br>具体步骤：  </p><ol><li>创建一个非大陆地区的公有读私有写存储桶，推荐中国香港节点。</li><li>开启存储桶的静态网站模块，并打开安全模块中的服务器端加密。</li><li>在对象存储域名管理里填写自定义源站域名，在dnspod中添加对应CNAME解析，并上传对应证书密钥到源站上。</li><li>对象存储上传一个index.html文件，写入以下代码<pre class="language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">"域名网址"</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="方案二-github仓库跳转"><a href="#方案二-github仓库跳转" class="headerlink" title="方案二 github仓库跳转"></a>方案二 github仓库跳转</h1><p>准备：一个github账号，一个域名<br>思路：域名商那里CNAME解析到github，网址为yourname.github.io ;github仓库内CNAME写入域名并开启github即可</p><h1 id="方案二-对象存储跳转"><a href="#方案二-对象存储跳转" class="headerlink" title="方案二 对象存储跳转"></a>方案二 对象存储跳转</h1><p>准备：能开启静态网页的对象存储，一个域名<br>思路：一级域名CNAME解析到对象存储的website域名上，存储桶只存放一个index.html，之后写入JavaScript跳转即可<br><!--more--><br>具体步骤：  </p><ol><li>创建一个非大陆地区的公有读私有写存储桶，推荐中国香港节点。</li><li>开启存储桶的静态网站模块，并打开安全模块中的服务器端加密。</li><li>在对象存储域名管理里填写自定义源站域名，在dnspod中添加对应CNAME解析，并上传对应证书密钥到源站上。</li><li>对象存储上传一个index.html文件，写入以下代码<pre class="language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">"域名网址"</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></li></ol>]]></content>
     
     <summary type="html">
     
