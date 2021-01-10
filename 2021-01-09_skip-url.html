@@ -326,12 +326,12 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：1 分钟前
+                  本文最后更新于：几秒前
                 
               </p>
             
             <div class="markdown-body">
-              <h1 id="方案二-github仓库跳转"><a href="#方案二-github仓库跳转" class="headerlink" title="方案二 github仓库跳转"></a>方案二 github仓库跳转</h1><p>准备：一个github账号，一个域名<br>思路：域名商那里CNAME解析到github，网址为yourname.github.io ;github仓库内CNAME写入域名并开启github即可</p>
+              <h1 id="方案一-github仓库跳转"><a href="#方案一-github仓库跳转" class="headerlink" title="方案一 github仓库跳转"></a>方案一 github仓库跳转</h1><p>准备：一个github账号，一个域名<br>思路：域名商那里CNAME解析到github，网址为yourname.github.io ;github仓库内CNAME写入域名并开启github即可</p>
 <h1 id="方案二-对象存储跳转"><a href="#方案二-对象存储跳转" class="headerlink" title="方案二 对象存储跳转"></a>方案二 对象存储跳转</h1><p>准备：能开启静态网页的对象存储，一个域名<br>思路：一级域名CNAME解析到对象存储的website域名上，存储桶只存放一个index.html，之后写入JavaScript跳转即可<br><!--more--><br>具体步骤：  </p>
 <ol>
 <li>创建一个非大陆地区的公有读私有写存储桶，推荐中国香港节点。</li>
