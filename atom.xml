@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xn--4gqva209dwmcyydi46e.com/"/>
-  <updated>2021-01-10T11:31:01.033Z</updated>
+  <updated>2021-01-09T10:42:07.340Z</updated>
   <id>https://xn--4gqva209dwmcyydi46e.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>域名跳转</title>
-    <link href="https://xn--4gqva209dwmcyydi46e.com/2021-01-09_skip-url.html"/>
-    <id>https://xn--4gqva209dwmcyydi46e.com/2021-01-09_skip-url.html</id>
-    <published>2021-01-08T16:00:01.000Z</published>
-    <updated>2021-01-10T11:31:01.033Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="方案一-github仓库跳转"><a href="#方案一-github仓库跳转" class="headerlink" title="方案一 github仓库跳转"></a>方案一 github仓库跳转</h1><p>准备：一个github账号，一个域名<br>思路：域名商那里CNAME解析到github，网址为yourname.github.io ;github仓库内CNAME写入域名并开启github即可</p><h1 id="方案二-对象存储跳转"><a href="#方案二-对象存储跳转" class="headerlink" title="方案二 对象存储跳转"></a>方案二 对象存储跳转</h1><p>准备：能开启静态网页的对象存储，一个域名<br>思路：一级域名CNAME解析到对象存储的website域名上，存储桶只存放一个index.html，之后写入JavaScript跳转即可<br><!--more--><br>具体步骤：  </p><ol><li>创建一个非大陆地区的公有读私有写存储桶，推荐中国香港节点。</li><li>开启存储桶的静态网站模块，并打开安全模块中的服务器端加密。</li><li>在对象存储域名管理里填写自定义源站域名，在dnspod中添加对应CNAME解析，并上传对应证书密钥到源站上。</li><li>对象存储上传一个index.html文件，写入以下代码<pre class="language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">"域名网址"</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      无备案域名曲线救国
-    
-    </summary>
-    
-      <category term="网站搭建" scheme="https://xn--4gqva209dwmcyydi46e.com/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="域名" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-  </entry>
   
   <entry>
     <title>网盘搭建</title>
@@ -59,28 +37,6 @@
       <category term="贴贴" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E8%B4%B4%E8%B4%B4/"/>
     
       <category term="挖坑待填" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E6%8C%96%E5%9D%91%E5%BE%85%E5%A1%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>图床搭建</title>
-    <link href="https://xn--4gqva209dwmcyydi46e.com/2021-01-06_img-make.html"/>
-    <id>https://xn--4gqva209dwmcyydi46e.com/2021-01-06_img-make.html</id>
-    <published>2021-01-05T16:00:01.000Z</published>
-    <updated>2021-01-08T15:54:19.180Z</updated>
-    
-    <content type="html"><![CDATA[<p>&#8195;&#8195;如果你是国外的域名，markdown是国内使用，需要绑定第三方dns，这里以<a href="https://www.namesilo.com/">namesilo</a>域名绑定<a href="https://www.dnspod.cn/">dnspod</a>为例。<br><!-- more -->  </p><h1 id="namesilo配置-国内备案域名可跳过此步骤"><a href="#namesilo配置-国内备案域名可跳过此步骤" class="headerlink" title="namesilo配置(国内备案域名可跳过此步骤)"></a>namesilo配置(国内备案域名可跳过此步骤)</h1><p><img src="https://bika.picacg.download/sfhj/281BCA8978E663D1AA05423137C07932E35E89FDDDCA7A23445455A7723F219C.png" alt=""></p><p>进入域名管理页面<br>将原有三个dns删除替换为以下内容，提交</p><blockquote><p>f1g1ns1.dnspod.net<br>  f1g1ns2.dnspod.net</p></blockquote><p>返回域名管理页面，点击域名所在行右侧蓝色地球，进入域名解析页面，删除所有的解析内容即可。</p><h1 id="dnspod配置"><a href="#dnspod配置" class="headerlink" title="dnspod配置"></a>dnspod配置</h1><p>进入dnspod管理页面，添加你的域名，点击dns刷新<br>创建公有读私有写存储桶，并进行配置<br><img src="https://bika.picacg.download/sfhj/5C3AE90E330110085424836989AC2F904D961280A441B32B909654094DCFE2B2.png" alt="添加自定义源站域名"></p><p>复制CNAME到dnspod解析页面，添加CNAME解析<br>需要注意的是，namesilo的dns可能需要等几十分钟才会刷新，在此之前访问域名可能是到达不了存储桶的<br><img src="https://bika.picacg.download/sfhj/8F8DD7DD34489C8833781A9902AAB2865C8E9D67E9CDE6C80709397DBBA92B6F.png" alt=""></p><h1 id="ssl证书以及防盗链设置"><a href="#ssl证书以及防盗链设置" class="headerlink" title="ssl证书以及防盗链设置"></a>ssl证书以及防盗链设置</h1><p>在dnspod或者腾讯云域名注册界面申请免费ssl证书并下载，解压。在存储桶域名绑定页面进行证书绑定，用记事本打开Nginx里的文本并复制到对应区域<br><img src="https://bika.picacg.download/sfhj/CD8B009B26C8DEE3EAA77C6E2F3128849E0C42235F46505D9A044DE045395734.png" alt=""></p><p>测试一下，不挂t的情况下自定义域名可以访问图片，以后的迁移只需copy文件，域名重新对应一下CNAME即可，markdown文章的图片地址不需要变动。<br><img src="https://bika.picacg.download/sfhj/23A0CF2B834EA629571E913336A5F720B1A895D7C61995294EFABD5630E25223.png" alt=""></p><p>存储桶防盗链设置如下，配置完防盗链之后本地预览和网页地址栏输入是访问不了对象存储的，只有白名单内的ip才能访问<br><img src="https://bika.picacg.download/sfhj/2BF0ECB90AA9F7E21EEFFBC486854C621C51F48974B5DF783776F503DA805A5B.png" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      基于对象存储及自定义源站域名，理论&quot;永久链&quot;图床，可在各云服务商或个人服务器间迁移数据
-    
-    </summary>
-    
-      <category term="网站搭建" scheme="https://xn--4gqva209dwmcyydi46e.com/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="对象存储" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/"/>
     
   </entry>
   
@@ -125,28 +81,6 @@
     
     
       <category term="贴贴" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E8%B4%B4%E8%B4%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>域名注册</title>
-    <link href="https://xn--4gqva209dwmcyydi46e.com/2021-01-05_make-domainname.html"/>
-    <id>https://xn--4gqva209dwmcyydi46e.com/2021-01-05_make-domainname.html</id>
-    <published>2021-01-04T16:00:01.000Z</published>
-    <updated>2021-01-10T11:30:53.994Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="域名服务商选择"><a href="#域名服务商选择" class="headerlink" title="域名服务商选择"></a>域名服务商选择</h1><p>&#8195;&#8195;个人站除开com、net这两个域名，其他推荐选择国外服务商进行注册，因为国内所有的服务商对于com、net以外的域名都不支持whois隐藏注册人姓名，并且对于绑定对象存储、服务器的操作，十分十分的不方便。以下仅列举一些我接触过的，还有很多其他的服务商就不一一列举了.</p><ul><li>国内<ul><li><a href="https://wanwang.aliyun.com/">阿里云万网</a>：尚可，只提供com和net、tv、cc这四个域名的隐藏个人信息服务</li><li><a href="https://www.huaweicloud.com/product/domain.html">华为云domain</a>：在企鹅和阿里中间的位置</li><li><a href="https://dnspod.cloud.tencent.com/">腾讯云dnspod</a>：我目前所有com域名都在这个上面</li><li><a href="https://cloud.baidu.com/product/bcd.html">百度云BCD</a>：新用户优惠不好，域名隐私里写的和实际不符</li></ul></li><li>国外<ul><li><a href="https://sg.godaddy.com/">GoDaddy</a>：全球最大的域名服务商，当然价格就…也是贵的，隐藏个人信息还要收费</li><li><a href="https://www.namesilo.com/">namesilo</a>：价格便宜，比国内的稍微贵一丢丢，所有域名均支持免费whois隐藏个人信息<!-- more --></li></ul></li></ul><h1 id="选购指南"><a href="#选购指南" class="headerlink" title="选购指南"></a>选购指南</h1><p>&#8195;&#8195;对于正常内容的网站，.com和.net选国内的就可以了，当然也包括cn…价格比国外便宜，安全性几个顶级服务商一般不会出问题，而且这两个后缀的域名默认隐藏个人信息。<br>&#8195;&#8195;其他的域名，比如work、link、site、me…请参考各个国内服务商的域名隐私保护指南(<a href="https://wanwang.aliyun.com/domain/whoisprotect/">阿里云</a>、<a href="https://support.huaweicloud.com/domain_faq/domain_faq_0002.html">华为云</a>、<a href="https://cloud.tencent.com/document/product/242/30404">腾讯云</a>、<a href="https://cloud.baidu.com/doc/BCD/s/bjwvym8qn">百度云</a>)，他们是不支持非主流域名隐藏注册人姓名和注册邮箱的，根据我的实践，腾讯和阿里的top域名，百度和腾讯的xyz域名，均不支持whois隐藏，虽然ICANN和欧盟在2018年已经要求whois查询结果不再展示域名所有者、联系邮箱等信息，但有些域名服务商对于非主流域名并没有默认隐藏。<br>&#8195;&#8195;这些非主流的域名，我一般作为跳转域名用，当然也可以给博客之类小网站，出于安全隐私考虑，这些域名最好选择国外的，好处有很多就不多说了，至少whois查询不到注册人。<br>&#8195;&#8195;然后是国外服务商的选择，我选择的是namesilo，因为便宜且支持隐藏个人信息，无需备案就可跳转。食用方法参考：<a href="https://zhuanlan.zhihu.com/p/33921436">https://zhuanlan.zhihu.com/p/33921436</a> 。跳转指定url参考：<a href="https://www.namesilo.com/Support/Domain-Forwarding">https://www.namesilo.com/Support/Domain-Forwarding</a> 。Google邮箱注册在移动端gmail注册即可不绑定手机，最开始的手机号只为验证是否真人。</p><p>价格对比1：<a href="https://www.domain265.com/">https://www.domain265.com/</a><br>价格对比2: <a href="https://namebeta.com/">https://namebeta.com/</a><br>whois查询：<a href="https://domain.163yun.com/">https://domain.163yun.com/</a><br>ICANN更多信息：<a href="https://www.icann.org/news/announcement-2018-05-22-zh">https://www.icann.org/news/announcement-2018-05-22-zh</a><br>域名跳转方案: <a href="https://xn--4gqva209dwmcyydi46e.com/2021-01-09_skip-url">https://xn--4gqva209dwmcyydi46e.com/2021-01-09_skip-url</a></p>]]></content>
-    
-    <summary type="html">
-    
-      域名服务商选择
-    
-    </summary>
-    
-      <category term="网站搭建" scheme="https://xn--4gqva209dwmcyydi46e.com/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="域名" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
   </entry>
   
