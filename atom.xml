@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xn--4gqva209dwmcyydi46e.com/"/>
-  <updated>2021-01-09T10:42:07.340Z</updated>
+  <updated>2021-01-11T08:23:37.717Z</updated>
   <id>https://xn--4gqva209dwmcyydi46e.com/</id>
   
   <author>
@@ -17,63 +17,17 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>网盘搭建</title>
-    <link href="https://xn--4gqva209dwmcyydi46e.com/2021-01-07_cloud-make.html"/>
-    <id>https://xn--4gqva209dwmcyydi46e.com/2021-01-07_cloud-make.html</id>
-    <published>2021-01-06T16:00:01.000Z</published>
-    <updated>2021-01-09T10:42:07.340Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Onedrive"><a href="#Onedrive" class="headerlink" title="Onedrive"></a>Onedrive</h1><p>demo：<a href="http://cloud.picacg.download">http://cloud.picacg.download</a><br><!--more--></p><h1 id="服务器-对象存储"><a href="#服务器-对象存储" class="headerlink" title="服务器-对象存储"></a>服务器-对象存储</h1><p>demo：null</p>]]></content>
-    
-    <summary type="html">
-    
-      个人网盘的几种搭建方案
-    
-    </summary>
-    
-      <category term="万事屋" scheme="https://xn--4gqva209dwmcyydi46e.com/categories/%E4%B8%87%E4%BA%8B%E5%B1%8B/"/>
-    
-    
-      <category term="贴贴" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E8%B4%B4%E8%B4%B4/"/>
-    
-      <category term="挖坑待填" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E6%8C%96%E5%9D%91%E5%BE%85%E5%A1%AB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>永久保存微博</title>
     <link href="https://xn--4gqva209dwmcyydi46e.com/2021-01-05_save-weibo.html"/>
     <id>https://xn--4gqva209dwmcyydi46e.com/2021-01-05_save-weibo.html</id>
-    <published>2021-01-04T16:00:03.000Z</published>
-    <updated>2021-01-10T11:31:05.236Z</updated>
+    <published>2021-01-04T16:00:01.000Z</published>
+    <updated>2021-01-11T08:23:37.717Z</updated>
     
     <content type="html"><![CDATA[<p>&#8195;&#8195;此方法仅适用于安卓，苹果也可以用但分享私信会麻烦很多。首先，请准备一个印象笔记高级会员(每月10G上传流量),活动时购买99软妹币一年专业版，每月20G流量，高级10G/月会更便宜。<br><!-- more --></p><p>&#8195;&#8195;由于众所周知的原因，微博经常夹掉一些内容，或者博主自删，不能查看半年前的博文。永久保存微博可以使用印象笔记、为知笔记、有道云笔记等，为知笔记记笔记还行，但是保存微博测试之后保存的是链接，有道云笔记可以参考<a href="https://xn--4gqva209dwmcyydi46e.com/2021-01-05_function-cloud">云函数</a>白嫖容量，但是太少了，而且用cookie容易失效不能一劳永逸。<br>&#8195;&#8195;接着是印象笔记，安卓配合share客户端，不算看评论的那一下只用跳转一个页面点4下即可保存。也可以用来保存微信文章，保存后的微信微博文章，在印象笔记中的分类和检索的非常便捷。<br><img src="https://bika.picacg.download/sfhj/DAD1AED5B3178AAD9CCC95D5EC45EA403D4DD01FA32495FA5FC28C604B7D3810.png" alt="私信给印象笔记保存单条微博"></p><p>&#8195;&#8195;保存后的样式如下，图片为原图，可下载<br><img src="https://bika.picacg.download/sfhj/5574B3DE838BA4B3E899C6516506BA3264B8C36D0108838C01641DF5C28544B7.jpg" alt="">  </p>]]></content>
     
     <summary type="html">
     
       此方法仅适用于安卓，苹果也可以用但分享私信会麻烦很多
-    
-    </summary>
-    
-      <category term="万事屋" scheme="https://xn--4gqva209dwmcyydi46e.com/categories/%E4%B8%87%E4%BA%8B%E5%B1%8B/"/>
-    
-    
-      <category term="贴贴" scheme="https://xn--4gqva209dwmcyydi46e.com/tags/%E8%B4%B4%E8%B4%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>云函数</title>
-    <link href="https://xn--4gqva209dwmcyydi46e.com/2021-01-05_function-cloud.html"/>
-    <id>https://xn--4gqva209dwmcyydi46e.com/2021-01-05_function-cloud.html</id>
-    <published>2021-01-04T16:00:02.000Z</published>
-    <updated>2021-01-10T11:31:38.584Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions.html">云函数简介</a><br>长不看结论：总之就是跑脚本，也可以跑微信的推送等事件。目前我只用它在跑签到脚本。<br><!-- more --></p><h1 id="server酱"><a href="#server酱" class="headerlink" title="server酱"></a>server酱</h1><p>原版server酱：<a href="http://sc.ftqq.com/">http://sc.ftqq.com/</a><br>自搭server酱：<a href="https://www.v2ex.com/t/567927">https://www.v2ex.com/t/567927</a></p><h1 id="哔哩哔哩签到"><a href="#哔哩哔哩签到" class="headerlink" title="哔哩哔哩签到"></a>哔哩哔哩签到</h1><p>项目地址：<a href="https://github.com/happy888888/BiliExp">https://github.com/happy888888/BiliExp</a><br>油猴脚本：<a href="https://greasyfork.org/zh-CN/scripts/393096-bilibiliexp/versions">https://greasyfork.org/zh-CN/scripts/393096-bilibiliexp/versions</a><br>注意事项：云函数方式为cookie签到</p><h1 id="天翼云盘签到和抽奖"><a href="#天翼云盘签到和抽奖" class="headerlink" title="天翼云盘签到和抽奖"></a>天翼云盘签到和抽奖</h1><p>项目地址：<a href="https://github.com/FingerSword/Cloud189-Sign-In">https://github.com/FingerSword/Cloud189-Sign-In</a><br>注意事项：不改密码就ok  </p><h1 id="网易云音乐签到"><a href="#网易云音乐签到" class="headerlink" title="网易云音乐签到"></a>网易云音乐签到</h1><p>地址：<a href="https://www.coolapk.com/feed/22733317?shareKey=NjhhNGU5NTdiOWE2NWZjMWVhODI">https://www.coolapk.com/feed/22733317?shareKey=NjhhNGU5NTdiOWE2NWZjMWVhODI</a><br>注意事项：不改密码就ok  </p><h1 id="有道云笔记签到"><a href="#有道云笔记签到" class="headerlink" title="有道云笔记签到"></a>有道云笔记签到</h1><p>1.0：<a href="https://www.coolapk.com/feed/18049127?shareKey=MDA1OTY2ZDVkYjYyNWVmMTU5MTE">https://www.coolapk.com/feed/18049127?shareKey=MDA1OTY2ZDVkYjYyNWVmMTU5MTE</a><br>2.0：<a href="https://www.coolapk.com/feed/19750209?shareKey=YTM5NzM3NTFmZGIzNWZmMGY3MjM">https://www.coolapk.com/feed/19750209?shareKey=YTM5NzM3NTFmZGIzNWZmMGY3MjM</a><br>注意事项：均为cookie，我用qq登录的账号一天就掉了，用手机号登录的应该能管一个月</p>]]></content>
-    
-    <summary type="html">
-    
-      云函数的使用及python签到
     
     </summary>
     
