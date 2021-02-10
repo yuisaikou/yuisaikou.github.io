@@ -1,0 +1,20 @@
+---
+title: 番组计划
+subtitle: 世界的、人类的命运就交给你了
+layout: "bangumi"
+date: 2018-09-30 17:25:30
+---
+<p class="note note-info">更新于 2021年1月6日</p>
+
+
+<p class="note note-danger">Status</p>
+
+| 状态 | 含义 |
+|---|---|
+|在看	|正在看的番|
+|待看	|准备看的番|
+|已看	|已经看完的番|
+|放弃	|观看途中放弃此番|
+|未看不补	|没有兴趣|
+
+<p class="note note-danger">番剧</p>  
